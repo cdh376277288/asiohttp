@@ -29,7 +29,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v120_xp</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -90,6 +90,9 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;BOOST_BEAST_ALLOW_DEPRECATED;_CRT_SECURE_NO_WARNINGS;BOOST_BIND_GLOBAL_PLACEHOLDERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\WorkSapce_cdh\http_world\asiohttp\asiohttp\implementation\interface;D:\WorkSapce_cdh\http_world\asiohttp\asiohttp\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,20 +144,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AsyncHttpClient.cpp" />
-    <ClCompile Include="AsyncHttpClient2.cpp" />
-    <ClCompile Include="AsyncHttpServer.cpp" />
-    <ClCompile Include="HttpProtocol.cpp" />
-    <ClCompile Include="HttpUtils.cpp" />
-    <ClCompile Include="log.cpp" />
+    <ClCompile Include="http_base.cpp" />
+    <ClCompile Include="http_client.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AsyncHttpClient.hpp" />
-    <ClInclude Include="AsyncHttpClient2.hpp" />
-    <ClInclude Include="AsyncHttpServer.hpp" />
-    <ClInclude Include="HttpProtocol.hpp" />
-    <ClInclude Include="HttpUtils.hpp" />
+    <ClInclude Include="http_base.h" />
+    <ClInclude Include="http_client.h" />
+    <ClInclude Include="http_mark.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

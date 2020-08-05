@@ -13,44 +13,29 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{89d4241d-104c-43f0-ae03-e16b58b00d36}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AsyncHttpClient.cpp">
+    <ClCompile Include="http_base.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="AsyncHttpClient2.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="AsyncHttpServer.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="HttpProtocol.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="HttpUtils.cpp">
+    <ClCompile Include="http_client.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="log.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AsyncHttpClient.hpp">
+    <ClInclude Include="http_mark.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="AsyncHttpClient2.hpp">
+    <ClInclude Include="http_base.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="AsyncHttpServer.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="HttpProtocol.hpp">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="HttpUtils.hpp">
+    <ClInclude Include="http_client.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
