@@ -32,6 +32,8 @@ namespace cdh {
 		*/
 		virtual int get(const std::string& url);
 
+		int test();
+
 		virtual std::string getResponse(void) {
 			return responseData_;
 		}
@@ -41,8 +43,7 @@ namespace cdh {
 		void handle_request_resolve(const std::string& url, pBuildRequest func);
 
 		// 解析后
-		void handle_resolve(const boost::system::error_code& err,
-			boost::asio::ip::tcp::resolver::iterator endpoint_iterator);
+		void handle_resolve(const boost::system::error_code& err, boost::asio::ip::tcp::resolver::iterator endpoint_iterator);
 
 		// 连接后
 		void handle_connect(const boost::system::error_code& err);
